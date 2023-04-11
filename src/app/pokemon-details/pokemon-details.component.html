@@ -1,5 +1,6 @@
-<h2>{{ pokemonDetail.nameFr }}</h2>
-<img [src]="pokemonDetail.image" [alt]="pokemonDetail.name" />
-<p><strong>Type(s) :</strong> {{ pokemonDetail.types.join(', ') }}</p>
-<p><strong>Hauteur :</strong> {{ pokemonDetail.height }} dm</p>
-<p><strong>Poids :</strong> {{ pokemonDetail.weight }} hg</p>
+
+<h2>{{ pokemonDetail.name.fr }}</h2>
+<img [src]="pokemonDetail.sprites.regular" [alt]="pokemonDetail.name" />
+<p><strong>Type(s) :</strong> <li *ngFor="let type of pokemonDetail.types">{{ type.name }} <img src="{{type.image}}" alt=""></li></p>
+<p><strong>Hauteur :</strong> {{ pokemonDetail.height }} </p>
+<p><strong>Poids :</strong> {{ pokemonDetail.weight }} </p>

@@ -1,0 +1,8 @@
+<h1>Liste de tous les pokémons</h1>
+
+<div class="pokemon-list">
+  <div class="pokemon" *ngFor="let pokemon of pokemons" >
+    <img [src]="pokemon.image" [alt]="pokemon.name" />
+    <a href="/pokemon?id={{pokemon.id}}"><p>{{ pokemon.nameFr }}</p></a>
+  </div>
+</div>

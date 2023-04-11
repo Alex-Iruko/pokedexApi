@@ -9,8 +9,8 @@ import { Pokemon } from '../pokemon';
   styleUrls: ['./pokemon-details.component.css']
 })
 export class PokemonDetailsComponent implements OnInit {
-  pokemonDetail!: Pokemon;
-  id= 0
+  pokemonDetail: any;
+  id= 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,8 +22,9 @@ export class PokemonDetailsComponent implements OnInit {
       this.id = params['id'];
     });
     this.pokemonService['getPokemonById'](this.id).subscribe(
-      (data: Pokemon) => {
+      (data) => {
         this.pokemonDetail = data;
+        console.log(this.pokemonDetail.nameFr)
       },
       (error: any) => {
         console.log(error);
