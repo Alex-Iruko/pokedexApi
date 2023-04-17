@@ -30,8 +30,9 @@ export class PokemonService {
     return this.http.get("https://api-pokemon-fr.vercel.app/api/v1/pokemon/"+id)
   }
   
-  
-  
+  getPokemonByGen(gen?: number): Observable<any>{
+    return this.http.get("https://api-pokemon-fr.vercel.app/api/v1/gen/"+gen)
+  }
   
   
 }

@@ -1,7 +1,14 @@
-
+<app-header></app-header>
 <h2>{{ pokemonDetail.name.fr }}</h2>
-<img [src]="pokemonDetail.sprites.regular" [alt]="pokemonDetail.name" />
-<img [src]="pokemonDetail.sprites.shiny" [alt]="pokemonDetail.name" />
-<p><strong>Type(s) :</strong> <li *ngFor="let type of pokemonDetail.types">{{ type.name }} <img src="{{type.image}}" alt=""></li></p>
+<img [src]="pokemonDetail.sprites.regular" [alt]="pokemonDetail.name" [height]="170" />
+<img [src]="pokemonDetail.sprites.shiny" [alt]="pokemonDetail.name" [height]="170" />
+
+<p><strong>Type(s) :</strong> <li *ngFor="let type of pokemonDetail.types">{{ type.name }} <img src="{{type.image}}" alt="" height="25px"></li></p>
 <p><strong>Taille :</strong> {{ pokemonDetail.height }} </p>
 <p><strong>Poids :</strong> {{ pokemonDetail.weight }} </p>
+<p><strong>PV:</strong> {{ pokemonDetail.stats.hp }} </p>
+<p><strong>Attaque:</strong> {{ pokemonDetail.stats.atk }} </p>
+<p><strong>Deffence:</strong> {{ pokemonDetail.stats.def }} </p>
+<p><strong>Attaque Spé:</strong> {{ pokemonDetail.stats.spe_atk }} </p>
+<p><strong>Déffence Spé:</strong> {{ pokemonDetail.stats.spe_def }} </p>
+<p><strong>Vitesse:</strong> {{ pokemonDetail.stats.vit }} </p>

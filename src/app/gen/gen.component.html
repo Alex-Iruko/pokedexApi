@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="pokemon-list">
+    <div class="pokemon" *ngFor="let pokemon of pokemonGen" >
+      <img [src]="pokemon.sprites.regular" [alt]="pokemon.name" />
+      <a href="/pokemon?id={{pokemon.pokedexId}}"><p>{{ pokemon.name.fr }}</p></a>
+    </div>

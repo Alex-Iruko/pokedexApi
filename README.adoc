@@ -1,0 +1,9 @@
+# Pokedex
+
+Ce projet à été réaliser par POIRIER Alexandre en 2023.
+
+Le but de ce projet est d'utiliser une API (https://api-pokemon-fr.vercel.app/)
+pour afficher une liste de tous les pokemons puis si on clique sur le nom de celui ci,
+les details s'affiche, tel que sa forme shiny, son ou ses type(s) ou encore ses statistiques.
+
+Lien de la doc : https://api-pokemon-fr.vercel.app/docs
